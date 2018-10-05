@@ -15,8 +15,9 @@ import net.md_5.bungee.api.event.PostLoginEvent;
 public class Event implements Listener {
 
  @EventHandler
- public void onLogin(PostLoginEvent e) { //ログイン時の例
+ public void ServerConnectedEvent(PostLoginEvent e) { //ログイン時の例
   //何かの処理
+        event.getPlayer().sendMessage("niconico");
  }
 
 }
